@@ -1,4 +1,4 @@
-# Interaction Strategy (V1)
+# Interaction Strategy Library (V2)
 
 本互动策略库专为 10 分钟无生试讲设计，仅保留 30~60 秒内可完成的师生微互动与虚拟实操策略。
 所有字段均已结构化，对齐 Questioning Strategy V2 标准，作为 Teaching Design Engine 的可调用组件。
@@ -29,15 +29,15 @@
 - **Difficulty**: Medium (中)
 - **Compatible Strategy**: Follow-up Questioning
 
-## 3. Blank Filling Arcade Interaction (课件填空接龙互动)
+## 3. Protocol/Architecture Filling Interaction (协议/架构补全互动)
 - **Recommendation**: ★★★★☆
-- **Purpose**: 打破单向灌输，快速检验核心术语的瞬时记忆，确保学生跟紧教学节奏。
+- **Purpose**: 打破单向灌输，快速检验核心术语的瞬时记忆，确保学生掌握协议的模块封装与架构层次。
 - **When to Use**: 汇总概念特征、对比表格、关键步骤流程等高度结构化内容的巩固阶段。
 - **Teaching Stage**: 巩固练习 (Consolidation)
-- **Template**: “这是OSI模型/TCP首部格式的空白表，老师点到哪一格，大家就一起帮我把答案补充完整！来，传输层这块对应的那个关键字段是什么？”
-- **Network Example**: “请看这张TCP报文首部格式结构图，现在老师把里面的‘源端口号’和‘目的端口号’全擦掉了。我指着第一行问，客户端发起网页请求时，它这里的目的端口通常会填什么知名数字？”
-- **Expected Student Response**: 全班齐答或个别抢答出标准端口号（如 80, 443）及核心协议字段（如 Sequence Number）。
-- **Risk**: 避免变成单调的复读游戏；应选取最易混淆或需强化的盲点进行随机填空，并伴有短评。
+- **Template**: “这是[协议/架构]的模块封装空白表。我们在分析过程中，此处[具体层级/字段]缺失了。哪位同学能根据我们刚才梳理的规范，把这个协议字段填充完整？”
+- **Network Example**: “请看这张TCP报文首部格式结构图，现在老师隐藏了‘源端口号’和‘目的端口号’。请问，当客户端发起网页请求时，目的端口字段应当填充什么标准协议号？”
+- **Expected Student Response**: 准确回答出缺失的模块名称或标准数字（如 80, 443 端口）及核心协议字段（如 Sequence Number）。
+- **Risk**: 避免变成单调的背诵；应选取最易混淆或需强化的盲点进行结构化填充，并强调其工程意义。
 - **Difficulty**: Low (低)
 - **Compatible Strategy**: Summarizing Questioning
 
@@ -53,26 +53,14 @@
 - **Difficulty**: Medium (中)
 - **Compatible Strategy**: Prediction Questioning
 
-## 5. Find the Difference Observation Interaction (找茬观察互动)
+## 5. Command Line Execution Interaction (命令行推演互动)
 - **Recommendation**: ★★★☆☆
-- **Purpose**: 通过视觉集中对比，快速区分形似实异的核心概念。
-- **When to Use**: 讲解容易混淆的协议报文格式、设备外观或通讯流程等具有对照价值的环节。
-- **Teaching Stage**: 新知探究 (New Knowledge Exploration)
-- **Template**: “屏幕左边是[A]发出的广播报文，右边是[B]发出的单播报文。请大家盯着这两张图仔细看30秒，看谁第一个发现目标MAC地址这一项里，藏着什么截然不同的特征？”
-- **Network Example**: “右边这个AR P请求报文和右边这个普通IP数据包，请大家聚焦二层帧头的Destination MAC这一栏。谁发现了？为什么ARP请求里填的是‘FF-FF-FF-FF-FF-FF’这个奇怪的全F广播地址？”
-- **Expected Student Response**: 快速指出ARP请求的目标MAC为广播地址，并解释因为此时发送方不知道目标设备的硬件地址。
-- **Risk**: 容易和对比提问混淆，需强调“视觉发现”而非“听讲理解”；建议直接配高清对齐的概念对比图。
-- **Difficulty**: Low (低)
-- **Compatible Strategy**: Comparative Questioning
-
-## 6. Flash Q&A Interaction (闪卡快问快答互动)
-- **Recommendation**: ★★★☆☆
-- **Purpose**: 极速激活课堂氛围，用于复习前一节课或上一环节的高频指令和缩略词。
-- **When to Use**: 课堂导入的暖场环节，或者在长时间单向讲解后重新捕捉注意力。
-- **Teaching Stage**: 课堂导入 (Introduction), 巩固练习 (Consolidation)
-- **Template**: “来，30秒热身赛开始！老师指到哪个词，大家就光速报它的全称或作用。准备好了吗？第一个：DNS！”
-- **Network Example**: “今天我们要进阶学路由了，但先来热热身！看词条：HTTP, NAT, DHCP, ARP, ICMP。老师指到哪，你就给老师秒回它叫什么全称！好，第三个词——DHCP，给老师你的答案！”
-- **Expected Student Response**: 迅速反应，齐声或指定回答出准确的全称及简短核心功能描述。
-- **Risk**: 语速控制不当易自乱阵脚，教师需用“拍手/敲屏”等信号统一答题节奏；避免用太难或太偏的单词冷场。
-- **Difficulty**: Low (低)
-- **Compatible Strategy**: Follow-up Questioning
+- **Purpose**: 提升实战与职业感，在设备配置过程中引导学生思考命令语法与输出结果，验证配置逻辑。
+- **When to Use**: 教师在模拟器中输入命令前半段或敲下回车验证配置前。
+- **Teaching Stage**: 实验演示 (Experiment/Demonstration), 难点突破 (Breakthrough of Difficulties)
+- **Template**: “目前我们已经进入了[特定配置模式]。接下来我要配置[特定功能]，命令的前半部分是[命令片段]，后面的关键参数大家觉得应该补上什么？/ 敲下回车后，大家预测一下[相关状态]会发生怎样的变化？”
+- **Network Example**: “现在我们已经在接口视图下输入了 `ip address 192.168.1.1`，后面还需要补全什么参数才能让设备识别网络规模？如果我现在敲回车，这条直连路由会自动出现在路由表中吗？”
+- **Expected Student Response**: 能补充完整的命令后缀（如 `255.255.255.0` 或子网掩码长度），并对执行结果做出合理预测。
+- **Risk**: 学生可能对命令语法遗忘导致回答卡壳，教师应利用 Tab 补全提示或错误提示信息来引导纠正，避免单纯等待答案。
+- **Difficulty**: Medium (中)
+- **Compatible Strategy**: Follow-up Questioning, Prediction Questioning
