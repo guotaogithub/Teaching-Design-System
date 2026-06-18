@@ -31,6 +31,20 @@ description: 中职/计算机类教师招聘 10 分钟无生试讲工作流。Us
 - 板书随讲随写，只写关键词。
 - 思政自然融入课堂，不喧宾夺主。
 
+## 策略文件映射
+
+当需要读取教学策略时，必须使用以下精确文件名。不要根据环节名称自行推测文件名。
+
+- 导入环节：`Strategy-Library/Introduction_Strategy.md`
+- 提问设计：`Strategy-Library/Questioning_Strategy.md`
+- 互动设计：`Strategy-Library/Interaction_Strategy.md`
+- 知识讲解：`Strategy-Library/Explanation_Strategy.md`
+- 环节过渡：`Strategy-Library/Transition_Strategy.md`
+- 板书设计：`Strategy-Library/Blackboard_Strategy.md`
+- 巩固练习：`Strategy-Library/Practice_Strategy.md`
+- 学生评价：`Strategy-Library/Evaluation_Strategy.md`
+- 课堂收束：`Strategy-Library/Closing_Strategy.md`
+
 ## 功能路由
 
 根据用户请求选择最小必要流程，不要一次性读取所有参考文件或策略库。

@@ -15,7 +15,7 @@
 
 常见选择：
 
-- 导入：`Introduction-Strategy.md`
+- 导入：`Introduction_Strategy.md`
 - 提问：`Questioning_Strategy.md`
 - 互动：`Interaction_Strategy.md`
 - 讲解：`Explanation_Strategy.md`
