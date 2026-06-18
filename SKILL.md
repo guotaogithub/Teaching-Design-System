@@ -11,9 +11,9 @@ description: 计算机网络教师招聘面试的 10 分钟试讲教案（Lesson
 
 ## 核心原则 (Core Principles)
 
-1. **现实工程与常识优先**：在构建教案与话术逻辑时，严禁盲目顺从教材字面排版顺序。必须引导虚拟学生根据真实世界中的网络工程实践（如：数据由外到内的流向、故障排查标准步骤等）进行合理的逻辑推演。
-2. **建构主义互动**：严禁教师填鸭式灌输。任何核心概念必须通过“现象 → 虚拟互动 → 请坐 → 客体化复述提炼 → 教师贴标签”来引导。
-3. **字数与纯净排版**：最终逐字稿死守 950~1100 字，禁止出现 `[面带微笑]` 等废话动作，仅保留 `[板书]` 提示与阶段标题。
+1. **现实工程与常识优先**：在构建教案与话术逻辑时，严禁盲目顺从教材字面排版顺序。必须引导虚拟学生根据真实世界中的网络工程实践（如：数据流向、故障排查标准步骤等）进行合理的逻辑推演。
+2. **建构主义互动**：严禁教师填鸭式灌输。核心概念必须通过“现象 → 虚拟互动 → 请坐 → 客体化复述提炼 → 教师贴标签”来引导。
+3. **字数与纯净排版**：最终逐字稿死守 950~1100 字，禁止出现 `[面带微笑]` 等废话动作，仅保留 `[板书]` 提示与五大阶段标题。
 
 ## 渐进式工作流 (Progressive Workflow)
 
@@ -24,7 +24,7 @@ description: 计算机网络教师招聘面试的 10 分钟试讲教案（Lesson
 这是生成逐字稿的前置必经环节。
 
 1. **阅读引擎核心**：首先读取 `Lesson-Design-Engine/Lesson_Design_Prompt_V6.md` 和 `Lesson-Design-Engine/Content_Selection_Strategy.md`。
-2. **按需加载策略**：根据课题性质，从 `Strategy-Library/` 中**选择性加载 2~4 个最相关的策略模块**（例如理论课选 Explanation，实操课选 Practice）。**不要全部读取！**
+2. **按需加载策略**：根据课题性质，从 `Strategy-Library/` 中**选择性加载 2~4 个最相关的策略模块**进行读取（例如：`cat Strategy-Library/Introduction-Strategy.md Strategy-Library/Explanation_Strategy.md`）。**不要全部读取！**
    - *可用策略*：`Introduction-Strategy.md` (导入), `Questioning_Strategy.md` (提问), `Interaction_Strategy.md` (互动), `Explanation_Strategy.md` (讲解), `Transition_Strategy.md` (过渡), `Blackboard_Strategy.md` (板书), `Practice_Strategy.md` (练习), `Evaluation_Strategy.md` (评价), `Closing_Strategy.md` (总结)。
 3. **执行**：输出完整的 5 步教学设计装配图。
 
@@ -32,6 +32,5 @@ description: 计算机网络教师招聘面试的 10 分钟试讲教案（Lesson
 
 必须在 Step 1 确认完成后，方可执行此步骤。
 
-1. **阅读标准宪法**：读取 `Prompts/逐字稿生成标准V2.0.md`。
-2. **阅读执行引擎**：读取 `Prompts/Generate_Script_Prompt_V8.md`。
-3. **执行**：根据 Step 1 的教案骨架，输出字数精准、互动达标、去除废话动作的 10 分钟逐字稿，并附带 Checklist。
+1. **阅读统一执行引擎**：读取 `Prompts/Generate_Script_Prompt_V9.md`。
+2. **执行**：根据 Step 1 的教案骨架，输出字数精准、互动达标、去除废话动作的 10 分钟逐字稿，并附带 Checklist。
